@@ -25,12 +25,17 @@ angular.module('directivePractice')
          			 }
         			});
 				})
+
 				scope.toggleLine = function() {
 					if (scope.checked) {
 						element.css('text-decoration', 'line-through')
 					} else {
 						element.css('text-decoration', 'none')
 					}
+				}
+
+				scope.remove = function() {
+					element.remove();
 				}
 
 			}
