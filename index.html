@@ -1,0 +1,23 @@
+<html ng-app="directivePractice">
+<head>
+	<title>Lesson Hider</title>
+	<meta charset="UTF-8">
+    <meta name="description" content="Lesson hider directive practice">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body ng-controller="lessonCtrl">
+
+<ul>
+<lesson-hider ng-repeat="lesson in lessons" lesson="lesson" day-alert="announceDay(lesson, day)"></lesson-hider>
+</ul>
+
+<div>{{test}}</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.js"></script>
+<script src="app.js"></script>
+<script src="lessonCtrl.js"></script>
+<script src="lessonService.js"></script>
+<script src="lessonHider.js"></script>
+
+</body>
+</html>
